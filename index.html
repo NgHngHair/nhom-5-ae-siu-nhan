@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web nhóm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+        html {
+	    scroll-behavior: smooth;
+	}
+	body {
+            background: linear-gradient(135deg, #0f0f0f, #1f003f, #0f0f0f);
+            color: #00fff7;
+            font-family: 'Orbitron', sans-serif;
+        }
+        header {
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+        }
+	footer {
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+        }
+        nav a:hover { transform: scale(1.1); }
+        h1, h2 { text-shadow: 0 0 10px #ff00c8, 0 0 20px #00fff7; }
+        section { background: rgba(0, 0, 0, 0.85); box-shadow: 0 0 20px #ff00c8; border: 2px solid #00fff7; border-radius: 1rem; }
+        .member-card:hover { transform: scale(1.05); box-shadow: 0 0 30px #ff00c8; }
+        .member-card { border-radius: 1rem; }
+	.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+            text-align: center;
+            padding: 1px 0;
+            transition: all 0.8s ease;
+	    z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="gaming_background.mp4" type="video/mp4">
+    </video>
+    <header class="p-16 text-center relative border-b-4">
+        <h1 class="text-7xl font-orbitron animate-pulse">TRANG WEB NHÓM CHÚNG TÔI</h1>
+        <nav class="flex justify-center space-x-8 text-2xl font-bold p-4 rounded-xl" id="navbar">
+            <a href="#truong" class="px-8 py-4 rounded-xl hover:text-yellow-400">Trường</a>
+            <a href="#lop" class="px-8 py-4 rounded-xl hover:text-yellow-400">Lớp</a>
+            <a href="#nhom" class="px-8 py-4 rounded-xl hover:text-yellow-400">Nhóm</a>
+        </nav>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let navbar = document.getElementById("navbar");
+                let navbarOffset = navbar.offsetTop;
+                window.addEventListener("scroll", function () {
+                    if (window.pageYOffset > navbarOffset) {
+                        navbar.classList.add("fixed");
+                    } else {
+                        navbar.classList.remove("fixed");
+                    }
+                });
+            });
+        </script>
+    </header>
+
+    <main class="p-12">
+        <section id="truong" class="mb-12 p-8 rounded-2xl">
+            <h2 class="text-4xl font-bold mb-6">Về Trường</h2>
+            <p class="text-lg leading-relaxed mb-4">Thông tin về ngôi trường của chúng tôi...</p>
+            <video controls class="w-full rounded-x1 border-2 border-pink-500">
+                <source src="video/0215.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="lop" class="mb-12 p-8 rounded-2xl">
+            <h2 class="text-4xl font-bold mb-6">Về Lớp</h2>
+            <p class="text-lg leading-relaxed mb-4">Giới thiệu về lớp học...</p>
+            <img src="lop.jpg" alt="Ảnh lớp học" class="w-full rounded-xl">
+        </section>
+
+        <section id="nhom" class="mb-12 p-8 rounded-2xl">
+            <h2 class="text-4xl font-bold mb-6">Về Nhóm</h2>
+            <p class="text-lg leading-relaxed mb-4">Thông tin về nhóm...</p>
+            <img src="nhom.jpg" alt="Ảnh nhóm" class="w-full rounded-xl">
+        </section>
+
+       <section id="thanhvien" class="mb-12 p-8 rounded-2xl">
+    <h2 class="text-4xl font-bold mb-6">Thành viên</h2>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <a href="profile1.html" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-purple-700 to-pink-500 shadow-2xl hover:shadow-pink-500">
+            <img src="imagines/Lê Đoàn Quốc Khánh.jpg" alt="Bạn 1" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+            <span class="text-lg font-semibold text-white">Lê Đoàn Quốc Khánh</span>
+        </a>
+        <a href="profile2.html" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-blue-700 to-green-500 shadow-2xl hover:shadow-green-500">
+            <img src="imagines/Ngô Hồng Phúc.jpg" alt="Bạn 2" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-green-500">
+            <span class="text-lg font-semibold text-white">Ngô Hồng Phúc</span>
+        </a>
+        <a href="profile3.html" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-purple-700 to-pink-500 shadow-2xl hover:shadow-pink-500">
+            <img src="imagines/Huỳnh Trường Giang.jpg" alt="Bạn 3" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+            <span class="text-lg font-semibold text-white">Huỳnh Trường Giang</span>
+        </a>
+        <a href="profile4.html" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-blue-700 to-green-500 shadow-2xl hover:shadow-green-500">
+            <img src="imagines/uh huh.jpg" alt="Bạn 4" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-green-500">
+            <span class="text-lg font-semibold text-white">Nguyễn Hồng Hải</span>
+        </a>
+        <a href="profile5.html" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-indigo-700 to-pink-500 shadow-2xl hover:shadow-pink-500">
+            <img src="imagines/Đỗ Hà Minh Thái.jpg" alt="Bạn 5" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+            <span class="text-lg font-semibold text-white">Đỗ Hà Minh Thái</span>
+        </a>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="p-6 text-center text-lg font-medium border-t-4">
+        &copy; 2025 Nhóm chúng tôi.
+    </footer>
+</body>
+</html>
