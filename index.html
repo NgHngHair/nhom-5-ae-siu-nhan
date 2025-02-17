@@ -40,6 +40,16 @@
             transition: all 0.8s ease;
 	    z-index: 1000;
         }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container img {
+            width: 48%;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -80,7 +90,10 @@
         <section id="lop" class="mb-12 p-8 rounded-2xl">
             <h2 class="text-4xl font-bold mb-6">Về Lớp</h2>
             <p class="text-lg leading-relaxed mb-4">Giới thiệu về lớp học...</p>
-            <img src="lop.jpg" alt="Ảnh lớp học" class="w-full rounded-xl">
+	    <div class="container">
+                <img src="imagines/lop-1.jpg" alt="Ảnh lớp học">
+                <img src="imagines/lop-2.jpg" alt="Ảnh lớp học">
+	    </div>
         </section>
 
         <section id="nhom" class="mb-12 p-8 rounded-2xl">
