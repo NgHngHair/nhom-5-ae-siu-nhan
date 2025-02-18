@@ -5,57 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhóm 5 CHỊ EM siu nhân</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-        html {
-	    scroll-behavior: smooth;
-	}
-	body {
-            background: linear-gradient(135deg, #0f0f0f, #1f003f, #0f0f0f);
-            color: #00fff7;
-            font-family: 'Orbitron', sans-serif;
-        }
-        header {
-            background: linear-gradient(135deg, #ff00c8, #00fff7);
-            box-shadow: 0 0 20px #00fff7;
-        }
-	footer {
-            background: linear-gradient(135deg, #ff00c8, #00fff7);
-            box-shadow: 0 0 20px #00fff7;
-        }
-        nav a:hover { transform: scale(1.1); }
-        h1, h2 { text-shadow: 0 0 10px #ff00c8, 0 0 20px #00fff7; }
-        section { background: rgba(0, 0, 0, 0.85); box-shadow: 0 0 20px #ff00c8; border: 2px solid #00fff7; border-radius: 1rem; }
-        .member-card:hover { transform: scale(1.05); box-shadow: 0 0 30px #ff00c8; }
-        .member-card { border-radius: 1rem; }
-	.fixed {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(135deg, #ff00c8, #00fff7);
-            box-shadow: 0 0 20px #00fff7;
-            text-align: center;
-            padding: 1px 0;
-            transition: all 0.8s ease;
-	    z-index: 1000;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .container img {
-            width: 48%;
-            height: auto;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <video autoplay muted loop class="video-background">
-        <source src="gaming_background.mp4" type="video/mp4">
-    </video>
     <header class="p-16 text-center relative border-b-4">
         <h1 class="text-7xl font-orbitron animate-pulse">TRANG WEB CỦA NHÓM 5 CHỊ EM SIU NHÂN</h1>
         <nav class="flex justify-center space-x-8 text-2xl font-bold p-4 rounded-xl" id="navbar">
@@ -81,7 +33,7 @@
     <main class="p-12">
         <section id="truong" class="mb-12 p-8 rounded-2xl">
             <h2 class="text-4xl font-bold mb-6">Về Trường</h2>
-            <p class="text-lg leading-relaxed mb-4">Thông tin về ngôi trường của chúng tôi...</p>
+            <p class="text-lg leading-relaxed mb-4">Trường THPT Chuyên Hùng Vương tọa lạc tại núi rừng Gia Lai, là một trong những ngôi trường danh giá với đội ngũ giáo viên tận tụy, nhiệt tình và luôn truyền cảm hứng cho học sinh. Ngôi trường đã đào tạo ra nhiều thế hệ học sinh mang thành tích cao trong học tập, đóng vai trò là lực lượng xây dựng tương lai của tỉnh nhà, của xã hội và của đất nước. Với phương châm “học phải đi đôi với hành”, trường THPT Chuyên Hùng Vương luôn là ngôi trường tiên phong của tỉnh Gia Lai trong công cuộc áp dụng những hình thức học tập mới mẻ, hiệu quả, nhằm mang đến cho học sinh không chỉ lí thuyết qua các bài giảng thú vị mà còn rèn luyện sức khỏe về thể chất, tinh thần cho đội ngũ giáo viên và cả học sinh, thiết kế những buổi hoạt động trải nghiệm bổ ích, tạo ra những sân chơi nhằm tu bổ những kĩ năng mềm, kĩ năng sống cần thiết để các bạn học sinh chuẩn bị hành trang bước vào đời.</p>
             <video autoplay controls class="w-full rounded-x1 border-2 border-pink-500">
                 <source src="video/0215.mp4" type="video/mp4">
             </video>
@@ -89,7 +41,7 @@
 
         <section id="lop" class="mb-12 p-8 rounded-2xl">
             <h2 class="text-4xl font-bold mb-6">Về Lớp</h2>
-            <p class="text-lg leading-relaxed mb-4">Giới thiệu về lớp học...</p>
+            <p class="text-lg leading-relaxed mb-4">Chi đoàn 12C5B (niên khóa 2022-2025) là một trong những chi đoàn thuộc khối lớp Chuyên Hóa. Tại đây, chúng em được đào tạo những kiến thức chuyên sâu về bộ môn Hóa học và đạt được nhiều thành tích cao trong cách hoạt động của trường: Đạt giải 4 trong Hội thi Văn nghệ Chào mừng ngày 20/11; Đạt giải nhất Cuộc thi Gương mặt đẹp trai cấp trường, Đạt giải nhất Cuộc thi thư pháp trong hội xuân đầu năm 2025, Đạt giải đặc biệt trong lòng người hâm mộ,... . Chúng em có thể tự hào nói rằng 12C5B luôn đoàn kết và giúp đỡ nhau trong học tập, cùng nhau trau dồi kiến thức và kĩ năng. Thông qua những hoạt động mà nhà trường phát động, chúng em đã có thêm những khoảnh khắc vui vẻ khi được đồng hành, được làm việc chung với nhau. Thêm vào đó là những kỉ niệm mà 12C5B sẽ luôn ghi nhớ trong suốt chặng đường 3 năm cấp ba – một hành trình không quá dài cũng không quá ngắn, nhưng chứa đựng những hồi ức tốt đẹp, sự nỗ lực không ngừng nghỉ và cả lớp học, cả những thầy cô đã từng tận tâm chỉ bảo chúng em.</p>
 	    <div class="container">
                 <img src="imagines/lop-1.jpg" alt="Ảnh lớp học">
                 <img src="imagines/lop-2.jpg" alt="Ảnh lớp học">
@@ -98,7 +50,13 @@
 
         <section id="nhom" class="mb-12 p-8 rounded-2xl">
             <h2 class="text-4xl font-bold mb-6">Về Nhóm 5 chị em siu nhân</h2>
-            <p class="text-lg leading-relaxed mb-4">Thông tin về nhóm...</p>
+            <p class="text-lg leading-relaxed mb-4">
+Thế giới này sẽ được trả lại sự yên bình, vì 5 chị em siêu nhân đã có mặt! Chúng tôi đại diện cho những siêu anh hùng hấp thụ tinh hoa của thiên nhiên, mang trong mình sức mạnh của các nguyên tố hóa học:
+<br>-Sodium (Na): nội tâm hướng nội, bề ngoài mỏng manh, nhưng sức mạnh tuyệt đối, không ngại va chạm.
+<br>-Aluminium (Al): linh hoạt, mềm dẻo, thích ứng nhanh với hoạt cảnh, chỉ cần tiếp xúc với không khí đã mang trong mình sức mạnh vô đối.
+<br>-Iron (Fe): vị vua kiềm chế cảm xúc, chỉ bộc lộ ra những khả năng trong điều kiện cần thiết, mang trong mình sức mạnh tiềm ẩn.
+<br>-Chromium (Cr): Lý trí sắt đá, không bị tác động bởi bất kì ai, sẵn sàng đương đầu với mọi nguy hiểm, bảo vệ được cho cả bản thân và đồng đội.
+<br>-Gold (Au): Hiếm có khó tìm, là leader của nhóm, luôn trong trạng thái phòng bị, khả năng phi phàm.</p>
 	    <div class="container">
                 <img src="imagines/nhom-1.jpg" alt="Ảnh nhóm">
                 <img src="imagines/nhom-2.jpg" alt="Ảnh nhóm">
@@ -110,31 +68,30 @@
     <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
         <a href="https://nghnghair.github.io/Le-Doan-Quoc-Khanh/" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-purple-700 to-pink-500 shadow-2xl hover:shadow-pink-500">
             <img src="imagines/Lê Đoàn Quốc Khánh.jpg" alt="Bạn 1" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
-            <span class="text-lg font-semibold text-white">Gao Bạc</span>
+            <span class="text-lg font-semibold text-white">Sodium<br>(Na)</span>
         </a>
-        <a href="profile2.html" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-blue-700 to-green-500 shadow-2xl hover:shadow-green-500">
+        <a href="https://nghnghair.github.io/Ngo-Hong-Phuc/" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-blue-700 to-green-500 shadow-2xl hover:shadow-green-500">
             <img src="imagines/Ngô Hồng Phúc.jpg" alt="Bạn 2" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-green-500">
-            <span class="text-lg font-semibold text-white">Gao Vàng</span>
+            <span class="text-lg font-semibold text-white">Aluminium<br>(Al)</span>
         </a>
         <a href="https://nghnghair.github.io/Huynh-Truong-Giang/" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-purple-700 to-pink-500 shadow-2xl hover:shadow-pink-500">
             <img src="imagines/Huỳnh Trường Giang.jpg" alt="Bạn 3" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
-            <span class="text-lg font-semibold text-white">Gao Đen</span>
+            <span class="text-lg font-semibold text-white">Iron<br>(Fe)</span>
         </a>
         <a href="https://nghnghair.github.io/Nguyen-Hong-Hai/" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-blue-700 to-green-500 shadow-2xl hover:shadow-green-500">
             <img src="imagines/uh huh.jpg" alt="Bạn 4" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-green-500">
-            <span class="text-lg font-semibold text-white">Gao Hồng</span>
+            <span class="text-lg font-semibold text-white">Chromium (Cr)</span>
         </a>
         <a href="https://nghnghair.github.io/Do-Ha-Minh-Thai/" class="member-card p-8 text-center rounded-2xl transition transform hover:scale-110 bg-gradient-to-r from-indigo-700 to-pink-500 shadow-2xl hover:shadow-pink-500">
             <img src="imagines/Đỗ Hà Minh Thái.jpg" alt="Bạn 5" class="w-full h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
-            <span class="text-lg font-semibold text-white">Gao Đỏ</span>
+            <span class="text-lg font-semibold text-white">Gold<br>(Au)</span>
         </a>
     </div>
 </section>
-
     </main>
-
     <footer class="p-6 text-center text-lg font-medium border-t-4">
-        &copy; 2025 Nhóm chúng tôi.
+	Tự do là một quyền nhưng trách nhiệm lại là nghĩa vụ phải đảm nhận.
+	<br>Vote cho 5 CHỊ EM siu nhân <a href="https://nghnghair.github.io/vote/">tại đây</a>
     </footer>
 </body>
 </html>

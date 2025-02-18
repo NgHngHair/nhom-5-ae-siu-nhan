@@ -1,0 +1,48 @@
+         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+        html {
+	    scroll-behavior: smooth;
+	}
+	body {
+            background: linear-gradient(135deg, #0f0f0f, #1f003f, #0f0f0f);
+            color: #00fff7;
+            font-family: 'Orbitron', sans-serif;
+        }
+        header {
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+        }
+	footer {
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+	    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        nav a:hover { transform: scale(1.1); }
+        h1, h2 { text-shadow: 0 0 10px #ff00c8, 0 0 20px #00fff7; }
+        section { background: rgba(0, 0, 0, 0.85); box-shadow: 0 0 20px #ff00c8; border: 2px solid #00fff7; border-radius: 1rem; }
+        .member-card:hover { transform: scale(1.05); box-shadow: 0 0 30px #ff00c8; }
+        .member-card { border-radius: 1rem; }
+	.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+            text-align: center;
+            padding: 1px 0;
+            transition: all 0.8s ease;
+	    z-index: 1000;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container img {
+            width: 48%;
+            height: auto;
+            border-radius: 10px;
+        }
+	p {
+    	text-indent: 30px;
+	}
