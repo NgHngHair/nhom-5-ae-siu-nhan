@@ -11,15 +11,21 @@
             <label for="fullname">Họ và tên:</label><br>
             <input type="text" id="fullname" name="fullname" required><br>
     	    <label for="email">Email:</label><br>
-	    <input type="email" id="email" name="email" required><br>
+	    <input type="email" id="email" name="email" required><br><form>
+            <label for="male">Nam</label>
+            <input type="radio" id="male" name="gender" value="male">
+  	    <label for="female">Nữ</label>
+	    <input type="radio" id="female" name="gender" value="female">
+	    <label for="other">Khác</label>
+	    <input type="radio" id="other" name="gender" value="other"><br>
 	    <label for="birthdate">Ngày sinh:</label><br>
 	    <input type="date" id="birthdate" name="birthdate" required><br>
 	    <label for="membership">Loại hình thành viên:</label><br>
-	<select id="membership" name="membership">
-	    <option value="basic">Thành viên cơ bản</option>
-	    <option value="premium">Thành viên cao cấp</option>
-	</select><br>
-	    <input type="submit" value="Đăng ký">
+	        <select id="membership" name="membership">
+	            <option value="basic">Thành viên cơ bản</option>
+	            <option value="premium">Thành viên cao cấp</option>
+	        </select><br>
+        <input type="submit" value="Đăng ký">
         </form>
     </body>
 </html>
